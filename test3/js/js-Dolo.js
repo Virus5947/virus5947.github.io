@@ -30,24 +30,24 @@ $(document)['ready'](function () {
 
 
 var random_images_array = [
-    '/assets/emoji/smiling-face-with-open-mouth-and-cold-sweat_1f605.png',
-    '/assets/emoji/face-with-tears-of-joy_1f602.png',
-    '/assets/emoji/smiling-face-with-smiling-eyes-and-three-hearts_1f970.png',
-    '/assets/emoji/smiling-face-with-heart-shaped-eyes_1f60d.png',
-    '/assets/emoji/smiling-face-with-smiling-eyes_1f60a.png',
-    '/assets/emoji/overheated-face_1f975.png',
-    '/assets/emoji/face-with-pleading-eyes_1f97a.png',
-    '/assets/emoji/heavy-black-heart_2764.png',
-    '/assets/emoji/speak-no-evil-monkey_1f64a.png',
-    '/assets/emoji/see-no-evil-monkey_1f648.png',
-    '/assets/emoji/freezing-face_1f976.png',
-    '/assets/emoji/serious-face-with-symbols-covering-mouth_1f92c.png',
-    '/assets/emoji/grinning-face-with-one-large-and-one-small-eye_1f92a.png',
-    '/assets/emoji/hugging-face_1f917.png',
-    '/assets/emoji/face-with-rolling-eyes_1f644.png',
-    '/assets/emoji/face-throwing-a-kiss_1f618.png',
-    '/assets/emoji/smiling-face-with-halo_1f607.png',
-    "/assets/emoji/butterfly_1f98b.png"
+    'assets/emoji/smiling-face-with-open-mouth-and-cold-sweat_1f605.png',
+    'assets/emoji/face-with-tears-of-joy_1f602.png',
+    'assets/emoji/smiling-face-with-smiling-eyes-and-three-hearts_1f970.png',
+    'assets/emoji/smiling-face-with-heart-shaped-eyes_1f60d.png',
+    'assets/emoji/smiling-face-with-smiling-eyes_1f60a.png',
+    'assets/emoji/overheated-face_1f975.png',
+    'assets/emoji/face-with-pleading-eyes_1f97a.png',
+    'assets/emoji/heavy-black-heart_2764.png',
+    'assets/emoji/speak-no-evil-monkey_1f64a.png',
+    'assets/emoji/see-no-evil-monkey_1f648.png',
+    'assets/emoji/freezing-face_1f976.png',
+    'assets/emoji/serious-face-with-symbols-covering-mouth_1f92c.png',
+    'assets/emoji/grinning-face-with-one-large-and-one-small-eye_1f92a.png',
+    'assets/emoji/hugging-face_1f917.png',
+    'assets/emoji/face-with-rolling-eyes_1f644.png',
+    'assets/emoji/face-throwing-a-kiss_1f618.png',
+    'assets/emoji/smiling-face-with-halo_1f607.png',
+    "assets/emoji/butterfly_1f98b.png"
  ];
 
 //Emoji Cursor ~ Dolo
