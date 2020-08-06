@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+body {
+  width: 100vw; height: 100vh;
+  background: #202020  radial-gradient(transparent,#303030);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100vw 100vw;
+  display: table;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  color: #fff;
+  text-align: center;
+  line-height: normal;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#loader {
+  display: table-cell;
+  vertical-align: middle;
+  i { display: none; font-weight: 900; }
+}

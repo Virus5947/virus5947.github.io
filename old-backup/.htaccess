@@ -1,0 +1,62 @@
+RewriteEngine On
+
+RewriteBase /
+
+AddHandler text/css .css
+AddType text/css .css
+
+RewriteCond %{HTTP_HOST} ^test\.virus5947\.tk$ [NC]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://test.virus5947.tk%{REQUEST_URI} [R=301,L,NE]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} !/map
+RewriteRule ^ https://virus5947.tk%{REQUEST_URI} [R=301,L,NE]
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^([^\.]+)$ $1.png [NC,L]
+
+# for adding .jpg extension if matching file exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1\.jpg -f [NC]
+RewriteRule ^(.+?)/?$ /$1.jpg [L]
+
+# for adding .png extension if matching file exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1\.png -f [NC]
+RewriteRule ^(.+?)/?$ /$1.png [L]
+
+RewriteCond %{REQUEST_URI} ^/pic/?$
+RewriteRule . / [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . / [L,R=301]
+
+#RewriteRule ^(?!(index.html|favicon.ico|pic/katze.jpg|pic/niklasthecat.jpg|pic/hug.jpg|pic/cateye.jpg|pic/s4.png|music/|assets/|cat/|virenschleim.png|BetterAPI.min.js|EntaeuschMichNicht.rar|VirenClient.rar|Bergwerklabs/|yt/|test/|tia/tiatranslate.txt|pic/osc.PNG|20180222_140505.mp4|license/|music2/|dc/|dcbot/|MySQLadmin/|phpmyadmin/|pic/screenAnJonathan.png|rb/|webts/|map/))$ index.html [L]
+
+#<Files Bergwerklabs.txt>
+#ForceType application/octet-stream
+#Header set Content-Disposition attachment
+#</Files>
+
+<IfModule mod_expires.c>
+# Enable expirations
+ExpiresActive On 
+# Default directive
+ExpiresDefault "access plus 0 seconds"
+# My favicon
+ExpiresByType image/x-icon "access plus 0 seconds"
+ExpiresByType image/png "access plus 0 seconds"
+# Images
+ExpiresByType image/gif "access plus 0 seconds"
+ExpiresByType image/png "access plus 0 seconds"
+ExpiresByType image/jpg "access plus 0 seconds"
+ExpiresByType image/jpeg "access plus 0 seconds"
+# CSS
+ExpiresByType text/css "access plus 0 seconds"
+# Javascript
+ExpiresByType application/javascript "access plus 0 seconds"
+</IfModule>
